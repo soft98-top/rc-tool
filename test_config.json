@@ -1,0 +1,19 @@
+{
+    "desc": "HTTP并发测试配置",
+    "r_files": {
+        "test_req": "test.http",
+        "test_curl": "test.curl"
+    },
+    "r_config": [
+        {
+            "thread": 1,
+            "inner_interval": 5,
+            "http_details": "test_req,test_curl"
+        },
+        {
+            "thread": 1, 
+            "inner_interval": 1,
+            "http_details": "test_curl"
+        }
+    ]
+}
